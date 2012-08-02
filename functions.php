@@ -277,23 +277,30 @@ google_ad_height = 250;
 		$options = Options::get_options(); ?>
 
 <div class="wrap">
-	<form method="post" name="options_form">
 	<h2>主题选项（M2）<a class="add-new-h2" href="http://www.mangguo.org/" target="_blank">芒果小站</a></h2>
 	<div class="metabox-holder has-right-sidebar">
 		<div class="inner-sidebar">
 			<div class="meta-box-sortabless ui-sortable">
 				<div class="postbox">
-					<h3 class="hndle"><span>关注芒果</span></h3>
+					<h3 class="hndle"><span>赞助芒果小站</span></h3>
 					<div class="inside">
-						<ul>
-							<li><a href="http://www.mangguo.org/" target="_blank">芒果小站</a></li>
-							<li><a href="http://www.mangguo.de/" target="_blank">芒果主机</a></li>
-							<li><a href="http://www.adminunion.com/" target="_blank">站长军团</a></li>
-						</ul>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" name="business" value="tinyhill@163.com">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="www.mangguo.org">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
 					</div>
 				</div>
 			</div>
-		</div>						
+		</div>
+		<form method="post" name="options_form">
 		<div class="has-sidebar">
 			<div class="has-sidebar-content" id="post-body-content">
 				<div class="meta-box-sortabless">
@@ -402,8 +409,8 @@ google_ad_height = 250;
 				</div>
 			</div>
 		</div>
+		</form>
 	</div>
-	</form>
 </div>
 <script>
 (function($){
