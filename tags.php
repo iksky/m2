@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: 标签
+*/
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -143,6 +148,7 @@ del {
 	<h2><?php the_title(); ?></h2>
 	<p><?php the_content(); ?></p>
 <?php endwhile; endif; ?>
+	<p><?php wp_tag_cloud('smallest=8&largest=22&number=0'); ?></p>
 	<h2>其他页面</h2>
 	<ul>
 <?php $pages = get_pages(); foreach ($pages as $v) : ?>

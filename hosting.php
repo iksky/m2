@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 主机
+Template Name: 美国主机推荐
 */
 ?>
 <?php require_once('header.php'); ?>

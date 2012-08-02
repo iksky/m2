@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: 友情链接
+*/
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -143,6 +148,15 @@ del {
 	<h2><?php the_title(); ?></h2>
 	<p><?php the_content(); ?></p>
 <?php endwhile; endif; ?>
+	<ol>
+<?php wp_list_bookmarks('title_li=&categorize=0&show_name=1&show_description=1&orderby=rand&between= - '); ?>
+	</ol>
+	<h3>加入链接</h3>
+	<ul>
+		<li>网站名称：<?php bloginfo('name'); ?></li>
+		<li>网站地址：<?php bloginfo('url'); ?></li>
+		<li>网站描述：<?php bloginfo('description'); ?></li>
+	</ul>
 	<h2>其他页面</h2>
 	<ul>
 <?php $pages = get_pages(); foreach ($pages as $v) : ?>

@@ -77,6 +77,6 @@ $options = get_option('m2_options');
 			<ul class="category-list clearfix">
 <?php $args = array('orderby' => 'count', 'order' => 'DESC', 'hide_empty' => false, 'title_li' => ''); wp_list_categories($args); ?>
 			</ul>
-			<div class="counter">标签数目统计值 <a href="/all/"><?php $counter = wp_count_terms('post_tag'); $terms = str_split($counter); foreach ($terms as $term) echo '<b>' . $term . '</b>'; ?></a></div>
+			<div class="counter">标签数目统计值 <a href="/tags/"><?php $counter = wp_count_terms('post_tag'); $terms = str_split($counter); foreach ($terms as $term) echo '<b>' . $term . '</b>'; ?></a></div>
 		</div>
 	</div>
