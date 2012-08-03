@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0.5em;
 }
 h1 {
-	border-bottom: 2px solid #D6E0E5;
+	border-bottom: 3px solid #D5D5D5;
 	font-size: 2.0em;
 	color: #000;
 	line-height: 1.5em;
@@ -50,7 +50,7 @@ h1 a {
 }
 a {
 	border-bottom: 1px dotted #224;
-	color: #1A397C;
+	color: #3975CE;
 	text-decoration: none;
 }
 a:hover {
@@ -130,7 +130,7 @@ del {
 #footer {
 	margin: 50px 0 40px;
 	padding-top: 10px;
-	border-top: 1px solid #DDD;
+	border-top: 1px solid #E3E3E3;
 	text-align: left;
 	font-size: 90%;
 }
