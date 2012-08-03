@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0.5em;
 }
 h1 {
-	border-bottom: 3px solid #D5D5D5;
+	border-bottom: 3px solid #3975CE;
 	font-size: 2.0em;
 	color: #000;
 	line-height: 1.5em;
@@ -139,6 +139,9 @@ del {
 	text-align: left;
 	font-size: 90%;
 }
+.current_page_item {
+	font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -151,9 +154,7 @@ del {
 	<p><?php wp_tag_cloud('smallest=8&largest=22&number=0'); ?></p>
 	<h2>其他页面</h2>
 	<ul>
-<?php $pages = get_pages(); foreach ($pages as $v) : ?>
-		<li><a href="<?php echo get_page_link( $v->ID ); ?>"><?php echo $v->post_title; ?></a></li>
-<?php endforeach; ?>
+<?php wp_list_pages('title_li='); ?>
 	</ul>
 	<p id="footer">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 </div>
