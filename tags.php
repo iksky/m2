@@ -32,7 +32,7 @@ h1 {
 }
 h2 {
 	font-size: 1.6em;
-	color: #3C4C6C;
+	color: #557;
 }
 h3 {
 	font-size: 1.3em;
