@@ -167,8 +167,10 @@ class Options {
 
 		//如果数据库中不存在该选项组, 设定这些选项的默认值, 并将它们插入数据库
 		if (!is_array($options)) {
+			$options['logo_img'] = '';
 			$options['page_width'] = '';
-			$options['minify'] = true;
+			$options['pagerank'] = true;
+			$options['minify'] = false;
 			$options['slide_links'] = array(
 				array('美国 BlueHost 主机', '优质国外主机，每月只需 $5.95，支持简体中文。', 'http://www.bluehost.com/track/mangguo'),
 				array('美国 HostMonster 主机', '与 Bluehost 同属一家公司，每月只需 $6.95，支持简体中文。', 'http://www.hostmonster.com/track/mangguo'),
@@ -225,7 +227,9 @@ google_ad_height = 250;
 		//如果是post提交数据, 对数据进行限制, 并更新到数据库
 		if(isset($_POST['options_save'])) {
 			$options = array(
+				'logo_img' => $_POST['logo_img'],
 				'page_width' => $_POST['page_width'],
+				'pagerank' => $_POST['pagerank'],
 				'minify' => $_POST['minify'],
 				'slide_links' => array(),
 				'text_links' => array(),
@@ -308,7 +312,13 @@ google_ad_height = 250;
 						<h3 class="hndle"><span>基本设置</span></h3>
 						<div class="inside">
 							<ul>
+								<li>LOGO图片：<input type="text" value="<?php echo $options['logo_img']; ?>" class="regular-text" name="logo_img">（大小：130x45 像素）</li>
 								<li>页面宽度：<input type="text" name="page_width" class="small-text" value="<?php echo $options['page_width']; ?>">（示例：950px 或 95%，默认为 960px）</li>
+								<li>
+									PR值挂件：
+									<label style="vertical-align:inherit;"><input type="checkbox" name="pagerank"<?php if ($options['pagerank']) echo ' checked="checked"'; ?>>&nbsp;选择启用</label>
+									（使用第三方挂件显示 Google PageRank 值）
+								</li>
 								<li>
 									资源合并：
 									<label style="vertical-align:inherit;"><input type="checkbox" name="minify"<?php if ($options['minify']) echo ' checked="checked"'; ?>>&nbsp;选择启用</label>

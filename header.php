@@ -25,11 +25,20 @@ $options = get_option('m2_options');
 }
 </style>
 <?php endif; ?>
+<?php if (!empty($options['logo_img'])) : ?>
+<style>
+.logo a {
+	background: url(<?php echo $options['logo_img']; ?>);
+}
+</style>
+<?php endif; ?>
 </head>
 <body>
 <div class="header">
 	<h1 class="logo"><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+<?php if (!empty($options['pagerank'])) : ?>
 	<a class="pagerank" href="http://pagerank.adminunion.com/<?php echo $host; ?>" title="PageRank 值查询" target="_blank"><img src="http://pagerank.adminunion.com/widget.php?size=xl&domain=<?php echo $host; ?>" alt=""></a>
+<?php endif; ?>
 	<ul class="quick-menu clearfix">
 		<li><span>欢迎光临<?php if($_COOKIE['comment_author_' . COOKIEHASH] != '') echo '，<b>' . $_COOKIE['comment_author_'.COOKIEHASH] . '</b>'; ?></span></li>
 		<li class="subscribe"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank">订阅</a></li>

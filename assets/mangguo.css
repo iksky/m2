@@ -274,7 +274,8 @@ a, a:hover, input, input:focus, textarea, textarea:focus {
 	text-decoration: none;
 	text-shadow: none;
 }
-.tab .current-menu-item a, .tab .current-menu-item a:visited, .tab .current-menu-item a:hover {
+.tab .current-menu-item a, .tab .current-menu-item a:visited, .tab .current-menu-item a:hover,
+.tab .current_page_item a, .tab .current_page_item a:visited, .tab .current_page_item a:hover {
 	background: #3975CE;
 	text-shadow: none;
 	box-shadow: none;
