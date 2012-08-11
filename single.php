@@ -50,7 +50,7 @@
 					</div>
 <?php endwhile; ?>
 					<div class="feed-me">
-						<strong>如果喜欢这篇文章，欢迎<a href="<?php bloginfo('rss2_url'); ?>" target="_blank">订阅芒果小站</a>以获得最新内容。</strong>
+						<strong>如果喜欢这篇文章，欢迎<a href="<?php bloginfo('rss2_url'); ?>" target="_blank">订阅<?php bloginfo('name'); ?></a>以获得最新内容。</strong>
 					</div>
 <?php comments_template(); ?>
 				</div>
