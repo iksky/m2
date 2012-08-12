@@ -2,16 +2,16 @@
 <?php if ( $comments ) : ?>
 						<h3>已经有 <?php comments_number('0', '1', '%'); ?> 条群众意见</h3>
 						<ol class="comment-list clearfix">
-<?php $floor = 1; foreach($comments as $comment) : ob_flush(); ?>
-							<li class="item <?php if ($comment -> comment_author_email == get_the_author_email()) echo 'admin '; ?>clearfix" id="comment-<?php comment_ID(); ?>">
-								<div class="gravatar"><?php if(get_comment_type() == 'comment') echo get_avatar($comment, 32); else echo '<img src="/wp-content/themes/mangguo/img/avatar.png" alt="">'; ?></div>
+<?php $floor = 1; foreach($comments as $comment) : ?>
+							<li class="item <?php if ($comment->comment_author_email == get_the_author_email()) echo 'admin '; ?>clearfix" id="comment-<?php comment_ID(); ?>">
+								<div class="gravatar"><?php if(get_comment_type() == 'comment') echo get_avatar($comment, 32); else echo '<img src="http://0.gravatar.com/avatar/07b2aa7f258fca80b98ee61bd65f6c95?s=32&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&r=G&forcedefault=1" alt="">'; ?></div>
 								<dl>
-									<dt><em><?php comment_author_link(); ?></em> <?php if($comment -> comment_parent) echo '对 <em><a class="reply-to" href="#comment-' . $comment -> comment_parent . '" title="查看被回应楼层">' . get_comment($comment -> comment_parent) -> comment_author.'</a></em> 说'; ?><s>/</s><?php comment_date('Y-m-d H:i'); ?></dt>
-									<dd><?php echo substr(apply_filters('comment_text', $comment -> comment_content), 0, -5).' <a href="#comment" class="reply-to" rel="' . $comment -> comment_ID . '">回应</a></p>'; ?></dd>
+									<dt><em><?php comment_author_link(); ?></em> <?php if($comment->comment_parent) echo '对 <em><a href="#comment-' . $comment -> comment_parent . '" title="查看被回应楼层">' . get_comment($comment -> comment_parent) -> comment_author.'</a></em> 说'; ?><s>/</s><?php comment_date('Y-m-d H:i'); ?></dt>
+									<dd><?php echo substr(apply_filters('comment_text', $comment->comment_content), 0, -5).' <a href="#comment" class="reply-to" rel="' . $comment -> comment_ID . '">回应</a></p>'; ?></dd>
 								</dl>
 								<b class="floor">#<?php echo $floor; ?></b>
 							</li>
-<?php flush(); $floor++; endforeach; ?>
+<?php $floor++; endforeach; ?>
 						</ol>
 <?php endif; ?>
 						<h3><?php if ($comment_author) : printf('欢迎回来，%s。简单说几句吧', $comment_author); echo '<a href="javascript:;" class="author-toggle" id="author-toggle">修改资料</a>'; else : echo '下面我简单说几句'; endif; ?></h3>
