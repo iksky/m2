@@ -169,7 +169,7 @@ class Options {
 		if (!is_array($options)) {
 			$options['logo_img'] = '';
 			$options['page_width'] = '';
-			$options['pagerank'] = true;
+			$options['pagerank'] = false;
 			$options['minify'] = false;
 			$options['slide_links'] = array(
 				array('美国 BlueHost 主机', '优质国外主机，每月只需 $5.95，支持简体中文。', 'http://www.bluehost.com/track/mangguo'),
@@ -177,9 +177,10 @@ class Options {
 				array('美国 JustHost 主机', '超级便宜的虚拟主机，每月低至 $3.95，WordPress 博客首选。', 'http://stats.justhost.com/track?c38717e2731a3cc908b64aadd428b8aba')
 			);
 			$options['text_links'] = array(
-				array('芒果主机，专业的美国主机导购信息', 'red', 'http://www.mangguo.de/?source=mangguo'),
-				array('站长军团，我的站长我的站', 'orange', 'http://www.adminunion.com/?source=mangguo'),
-				array('使用站长军团 Chrome 插件，一秒钟查询网站', 'green', 'https://chrome.google.com/webstore/detail/jiciopodjlcihnefplabkfbeppfpfeib?hl=zh-CN')
+				array('美国 BlueHost 主机', '优质国外主机，每月只需 $5.95，支持简体中文。', 'http://www.bluehost.com/track/mangguo'),
+				array('美国 HostMonster 主机', '与 Bluehost 同属一家公司，每月只需 $6.95，支持简体中文。', 'http://www.hostmonster.com/track/mangguo'),
+				array('美国 JustHost 主机', '超级便宜的虚拟主机，每月低至 $3.95，WordPress 博客首选。', 'http://stats.justhost.com/track?c38717e2731a3cc908b64aadd428b8aba'),
+				array('芒果主机，专业的美国主机导购信息', 'red', 'http://www.mangguo.de/?source=mangguo')
 			);
 			$options['article_a1'] = array(
 				'active' => true,
