@@ -184,23 +184,11 @@ class Options {
 			);
 			$options['article_a1'] = array(
 				'active' => true,
-				'content' => '<script>
-google_ad_client = "ca-pub-9763316970959340";
-google_ad_slot = "8867225296";
-google_ad_width = 300;
-google_ad_height = 250;
-</script>
-<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>'
+				'content' => '<a href="http://www.bluehost.com/track/mangguo/CODE3" target="_blank"><img src="http://img04.taobaocdn.com/tps/i4/T1cPnOXk4aXXX0o.fS-300-250.gif" width="300" height="250" alt=""></a>'
 			);
 			$options['article_a2'] = array(
 				'active' => true,
-				'content' => '<script>
-google_ad_client = "ca-pub-9763316970959340";
-google_ad_slot = "7011996559";
-google_ad_width = 300;
-google_ad_height = 250;
-</script>
-<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>'
+				'content' => '<a href="http://www.bluehost.com/track/mangguo/CODE5" target="_blank"><img src="http://img03.taobaocdn.com/tps/i3/T1zdHJXhBrXXX0o.fS-300-250.gif" width="300" height="250" alt=""></a>'
 			);
 			$options['sidebar_a3'] = array(
 				'home' => false,
