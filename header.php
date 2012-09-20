@@ -71,7 +71,13 @@ $options = get_option('m2_options');
 		<span class="toggle">切换到精简模式</span>
 <?php endif; ?>
 	</div>
-<?php get_search_form(); ?>
+	<div class="search">
+		<div class="message"><b>他说</b>：<?php bloginfo('description'); ?></div>
+		<form action="/" method="get" class="searchform clearfix">
+			<span class="s"><input type="text" name="s" id="s" value="<?php the_search_query(); ?>"></span>
+			<span class="searchsubmit"><button type="submit"></button></span>
+		</form>
+	</div>
 	<div class="tab">
 		<ul class="clearfix">
 			<li<?php if (is_home()) echo ' class="current-menu-item"'; ?>><a href="<?php bloginfo('url'); ?>">首页</a></li>
