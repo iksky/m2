@@ -275,20 +275,60 @@ google_ad_height = 250;
 		<div class="inner-sidebar">
 			<div class="meta-box-sortabless ui-sortable">
 				<div class="postbox">
-					<h3 class="hndle"><span>赞助芒果小站</span></h3>
+					<h3 class="hndle"><span>美国主机推荐</span></h3>
 					<div class="inside">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="tinyhill@163.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="www.mangguo.org">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-<input type="image" src="https://www.paypalobjects.com/zh_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
-<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
-</form>
+			<table class="hosting" style="width:100%;">
+				<tr id="justhost">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://stats.justhost.com/track?c38717e2731a3cc908b64aadd428b8aba"><img alt="JustHost" src="http://img02.taobaocdn.com/tps/i2/T1vWfwXaXcXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="hostgator">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://secure.hostgator.com/cgi-bin/affiliates/clickthru.cgi?id=mangguo"><img alt="HostGator" src="http://img02.taobaocdn.com/tps/i2/T1fYvvXgdnXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="bluehost">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://www.bluehost.com/track/mangguo"><img alt="BlueHost" src="http://img04.taobaocdn.com/tps/i4/T1qFYwXi8cXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="hostmonster">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://www.hostmonster.com/track/mangguo"><img alt="HostMonster" src="http://img03.taobaocdn.com/tps/i3/T1dVYvXolnXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="lunarpages">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://www.lunarpages.com/id/mangguo"><img alt="LunarPages" src="http://img03.taobaocdn.com/tps/i3/T1wXrwXjJbXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="ixwebhosting">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://www.ixwebhosting.com/templates/ix/v2/affiliate/clickthru.cgi?id=mangguo"><img alt="IXWebHosting" src="http://img01.taobaocdn.com/tps/i1/T1zx6tXldlXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="site5">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://www.site5.com/in.php?id=85885"><img alt="Site5" src="http://img03.taobaocdn.com/tps/i3/T1zlntXeBoXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="dreamhost">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://www.dreamhost.com/r.cgi?674076"><img alt="DreamHost" src="http://img04.taobaocdn.com/tps/i4/T1rRvuXahfXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="hawkhost">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="https://my.hawkhost.com/aff.php?aff=3100"><img alt="HawkHost" src="http://img02.taobaocdn.com/tps/i2/T1Yj6vXodgXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+				<tr id="godaddy">
+					<td class="web-hosting" align="center">
+						<a target="_blank" href="http://affiliate.godaddy.com/redirect/95B163F64AA934DC393CB79E3EF3602108CE0DCCF913CA81DECFD2130290BC91/?r=mangguo"><img alt="Godaddy" src="http://img01.taobaocdn.com/tps/i1/T1pnTvXaFdXXcmPIvc-150-35.png"></a>
+					</td>
+				</tr>
+			</table>
 					</div>
 				</div>
 			</div>
